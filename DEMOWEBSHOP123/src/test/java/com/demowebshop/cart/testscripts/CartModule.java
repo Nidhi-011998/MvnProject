@@ -10,7 +10,8 @@ public class CartModule {
 public void addTocart() {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.fb.com");
-		Reporter.log(driver.getTitle());
+		Reporter.log(driver.getTitle(),true);
 		Reporter.log("Product has been added to cart",true);
+		driver.quit();
 }
 }
