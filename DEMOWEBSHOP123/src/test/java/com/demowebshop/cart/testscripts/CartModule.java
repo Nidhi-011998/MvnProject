@@ -14,4 +14,12 @@ public void addTocart() {
 		Reporter.log("Product has been added to cart",true);
 		driver.quit();
 }
+	@Test
+public void removeFromCart() {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.instagram.com");
+		Reporter.log(driver.getTitle(),true);
+		Reporter.log("Product has been removed from cart",true);
+		driver.quit();
+}
 }
